@@ -1,0 +1,23 @@
+PODS:
+  - DACircularProgress (2.3.1)
+  - IDMPhotoBrowser (1.8.1):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - pop (1.0.8)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+
+DEPENDENCIES:
+  - IDMPhotoBrowser
+
+SPEC CHECKSUMS:
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  IDMPhotoBrowser: 99eccfe6431e182f64e2fe57ac654316fbf81576
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+
+PODFILE CHECKSUM: 68186e206ba80128b8bbe76b8049d2a5b6a29a28
+
+COCOAPODS: 1.4.0

@@ -31,9 +31,9 @@
     BOOL isDir;
     [fm fileExistsAtPath:path isDirectory:&isDir];
     if (isDir) {
-        NSLog(@"这是个****文件夹****");
+//        NSLog(@"这是个****文件夹****");
     }else{
-        NSLog(@"这是个****文件**** ");
+//        NSLog(@"这是个****文件**** ");
         _mImage.image = [UIImage imageWithContentsOfFile:path];
     }  
 }

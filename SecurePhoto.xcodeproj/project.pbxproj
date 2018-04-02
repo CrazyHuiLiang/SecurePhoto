@@ -17,9 +17,12 @@
 		A9461BDC203035EA00A17190 /* ExplortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9461BDB203035EA00A17190 /* ExplortViewController.m */; };
 		A9E7CD30203044E200D0406B /* ExploreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7CD2F203044E200D0406B /* ExploreTableViewCell.m */; };
 		A9E7CD37203059F100D0406B /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7CD36203059F100D0406B /* ShowViewController.m */; };
+		D0869E95D462A6A0D4C2C343 /* libPods-SecurePhoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 292765AA2AF72FCAC03FB1B8 /* libPods-SecurePhoto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		292765AA2AF72FCAC03FB1B8 /* libPods-SecurePhoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecurePhoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43F673910A0FAE8235D1CDE /* Pods-SecurePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurePhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		A90E60842033CFA600529F3F /* 文件夹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "文件夹.png"; sourceTree = "<group>"; };
 		A93668EC203006F30052C01C /* SecurePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93668EF203006F30052C01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		A9E7CD2F203044E200D0406B /* ExploreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewCell.m; sourceTree = "<group>"; };
 		A9E7CD35203059F100D0406B /* ShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		A9E7CD36203059F100D0406B /* ShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		B62E4030B777F0C0ED8CCC33 /* Pods-SecurePhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurePhoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +48,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0869E95D462A6A0D4C2C343 /* libPods-SecurePhoto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A90E60862033D46200529F3F /* vender */ = {
+		891D7083EBAEE2F79652EAE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				292765AA2AF72FCAC03FB1B8 /* libPods-SecurePhoto.a */,
 			);
-			path = vender;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A93668E3203006F30052C01C = {
@@ -62,6 +68,8 @@
 			children = (
 				A93668EE203006F30052C01C /* SecurePhoto */,
 				A93668ED203006F30052C01C /* Products */,
+				CAF5672B9CA69EE38359E573 /* Pods */,
+				891D7083EBAEE2F79652EAE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +84,6 @@
 		A93668EE203006F30052C01C /* SecurePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				A90E60862033D46200529F3F /* vender */,
 				A9E7CD312030477900D0406B /* images */,
 				A93668EF203006F30052C01C /* AppDelegate.h */,
 				A93668F0203006F40052C01C /* AppDelegate.m */,
@@ -145,6 +152,15 @@
 			path = show;
 			sourceTree = "<group>";
 		};
+		CAF5672B9CA69EE38359E573 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A43F673910A0FAE8235D1CDE /* Pods-SecurePhoto.debug.xcconfig */,
+				B62E4030B777F0C0ED8CCC33 /* Pods-SecurePhoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9366902203006F40052C01C /* Build configuration list for PBXNativeTarget "SecurePhoto" */;
 			buildPhases = (
+				A6968540550DFA31EBA74688 /* [CP] Check Pods Manifest.lock */,
 				A93668E8203006F30052C01C /* Sources */,
 				A93668E9203006F30052C01C /* Frameworks */,
 				A93668EA203006F30052C01C /* Resources */,
+				D3C53297CC91A3484C58B4D4 /* [CP] Embed Pods Frameworks */,
+				D479B1B07B1CC4707790F16C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +230,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6968540550DFA31EBA74688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecurePhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C53297CC91A3484C58B4D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D479B1B07B1CC4707790F16C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto-resources.sh",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPBLocalizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A93668E8203006F30052C01C /* Sources */ = {
@@ -354,12 +429,13 @@
 		};
 		A9366903203006F40052C01C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43F673910A0FAE8235D1CDE /* Pods-SecurePhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5WRR2D25V;
 				INFOPLIST_FILE = SecurePhoto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bill.SecurePhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,12 +445,13 @@
 		};
 		A9366904203006F40052C01C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62E4030B777F0C0ED8CCC33 /* Pods-SecurePhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5WRR2D25V;
 				INFOPLIST_FILE = SecurePhoto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bill.SecurePhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
