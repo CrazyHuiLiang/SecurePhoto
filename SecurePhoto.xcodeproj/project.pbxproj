@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF02F1120EDBC99006DF146 /* t1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF02F0E20EDBC99006DF146 /* t1.png */; };
+		1FF02F1220EDBC99006DF146 /* t1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF02F0F20EDBC99006DF146 /* t1@2x.png */; };
+		1FF02F1320EDBC99006DF146 /* t1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF02F1020EDBC99006DF146 /* t1@3x.png */; };
 		A90E60852033CFA900529F3F /* 文件夹.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E60842033CFA600529F3F /* 文件夹.png */; };
 		A93668F1203006F40052C01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A93668F0203006F40052C01C /* AppDelegate.m */; };
 		A93668F4203006F40052C01C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93668F3203006F40052C01C /* ViewController.m */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FF02F0E20EDBC99006DF146 /* t1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t1.png; sourceTree = "<group>"; };
+		1FF02F0F20EDBC99006DF146 /* t1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t1@2x.png"; sourceTree = "<group>"; };
+		1FF02F1020EDBC99006DF146 /* t1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t1@3x.png"; sourceTree = "<group>"; };
 		292765AA2AF72FCAC03FB1B8 /* libPods-SecurePhoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecurePhoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43F673910A0FAE8235D1CDE /* Pods-SecurePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurePhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurePhoto/Pods-SecurePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		A90E60842033CFA600529F3F /* 文件夹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "文件夹.png"; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 		A9E7CD312030477900D0406B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1FF02F0E20EDBC99006DF146 /* t1.png */,
+				1FF02F0F20EDBC99006DF146 /* t1@2x.png */,
+				1FF02F1020EDBC99006DF146 /* t1@3x.png */,
 				A90E60842033CFA600529F3F /* 文件夹.png */,
 			);
 			path = images;
@@ -222,7 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF02F1120EDBC99006DF146 /* t1.png in Resources */,
+				1FF02F1220EDBC99006DF146 /* t1@2x.png in Resources */,
 				A93668FC203006F40052C01C /* LaunchScreen.storyboard in Resources */,
+				1FF02F1320EDBC99006DF146 /* t1@3x.png in Resources */,
 				A93668F9203006F40052C01C /* Assets.xcassets in Resources */,
 				A93668F7203006F40052C01C /* Main.storyboard in Resources */,
 				A90E60852033CFA900529F3F /* 文件夹.png in Resources */,
